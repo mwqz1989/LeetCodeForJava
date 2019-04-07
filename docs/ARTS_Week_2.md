@@ -2,7 +2,7 @@
 
 ## Algorithm:
 
-LeetCode number：41  [原题目戳这里](https://leetcode-cn.com/problems/first-missing-positive/)
+LeetCode number：41 First Missing Positive [原题目戳这里](https://leetcode-cn.com/problems/first-missing-positive/)
 
 [First Missing Positive - java](https://github.com/mwqz1989/LeetCodeForJava/blob/master/src/main/java/com/titan/titan/leetcode/simple/FirstMissingPositive.java)
 
