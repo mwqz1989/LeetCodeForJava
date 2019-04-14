@@ -1,6 +1,6 @@
-# ARTS Week One
+# ARTS Week 1
 
-##Algorith:
+## Algorith:
 
 第一周分享先尝试了LeetCode简单题目，发现难度尚可，第二周开始可以逐步去尝试中等题目。
 
@@ -8,13 +8,13 @@ LeetCode Number：771  宝石与石头 [原题目戳这里](https://leetcode-cn.
 
 [Jewels And Stones- java](https://github.com/mwqz1989/LeetCodeForJava/blob/master/src/main/java/com/titan/titan/leetcode/simple/JewelsAndStones.java)
 
-##Review：
+## Review：
 
 第一次读英文文档，花了大概两天时间才把jdk里面的说明和wiki词条读明白。对着代码和解释一起看，基本能了解个大概。看完后觉得设计算法真是一项伟大的工程，不看说明根本不知道写的是啥。
 
 [Tim Sort](https://en.wikipedia.org/wiki/Timsort)
 
-##Tips：
+## Tips：
 
 阅读了java中Collections.sort实现方式。一直以为java中数组的排序使用归并排序来实现的，从源码来看，并没有想得那么简单，毕竟工业级的容器需要仔细推敲。
 Collections.sort方法在jdk1.7之前用的还是归并排序，1.7开始用了一种混合排序算法：TimSort。jdk文档中声明了该算法是借鉴了Python中list排序算法的实现。
@@ -55,7 +55,7 @@ public static void sort(Object[] a) {
 两个归根结底调用的都是同一个TimSort，只是一个传入了比较器，一个用默认自然顺序比较。同时里面还保留着原来的归并排序（legacyMergeSort），并用`LegacyMergeSort.userRequested`这个开关来控制使用哪种排序，默认是关闭。
 同时也理解了耗子哥为什么说读懂英文文档是多么的重要。Timsort算法在合并时为了减少有序序列的重复排序问题，引入了Run和Galloping Mode的概念，这个解释只有全英文的wiki百科和各种英文paper，只能硬着头皮去读了。
 
-##Share：
+## Share：
 
 既然看到了`Collections.sort`源码了解了TimSort，就要追根问底，刚开始读源码时觉得非常难懂，看完之后感慨发明者算法的哥们真机智。
 TimSort是一个稳定的混合型排序，同时用到了归并排序和插入排序，平均时间复杂度达到O(n*lgn)，最优时间复杂度能达到O(n)。在待排序序列有序度很高时效率非常高，不必对有序序列做重复排序。

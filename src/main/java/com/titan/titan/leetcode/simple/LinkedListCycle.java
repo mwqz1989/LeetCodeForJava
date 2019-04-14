@@ -22,7 +22,6 @@ public class LinkedListCycle {
             if (linkVal.contains(head))
                 return true;
         }
-        Collections.sort();
         return false;
     }
 }

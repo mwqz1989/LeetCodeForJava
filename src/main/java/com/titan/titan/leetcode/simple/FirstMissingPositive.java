@@ -40,6 +40,6 @@ public class FirstMissingPositive {
     public static void main(String[] args) {
         int[] nums = {1,3,1,4,3,4};
         int result = new FirstMissingPositive().firstMissingPositive(nums);
-        System.out.println(result);
+        System.out.println();
     }
 }

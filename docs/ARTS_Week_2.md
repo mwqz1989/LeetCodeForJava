@@ -1,4 +1,4 @@
-# ARTS Week Two
+# ARTS Week 2
 
 ## Algorithm:
 
